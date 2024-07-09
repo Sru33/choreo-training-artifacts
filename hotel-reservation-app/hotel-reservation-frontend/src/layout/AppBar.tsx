@@ -48,7 +48,8 @@ function UserMenu() {
         open={Boolean(anchorElUser)}
         onClose={handleCloseUserMenu}
       >
-        <MenuItem onClick={() => (window.location.pathname = "/reservations")}>
+        <MenuItem> 
+        onClick={() => (window.location.pathname = "/reservations")}
           onClick={() => {
             sessionStorage.removeItem("userInfo");
             window.location.href =
